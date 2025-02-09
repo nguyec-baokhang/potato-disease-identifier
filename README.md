@@ -5,6 +5,7 @@ The **Potato Disease Identifier** is a web application that uses a TensorFlow mo
 - A **FastAPI backend** for running the machine learning model.
 - A **React frontend** for users to upload images and view results.
 - Dockerized containers for easy deployment.
+- Showcase url: http://3.26.102.143:5173/
 
 ## Features
 - Upload a potato leaf image for disease identification.
@@ -66,7 +67,7 @@ Docker images have been pushed to Docker Hub for easy deployment:
    docker run -d -p 5173:5173 khangnguyen123/potato-disease-identifier-frontend
    ```
 
-Your application should now be accessible via `http://3.26.102.143:5173/`.
+Your application should now be accessible via `http://<your-ec2-ip>:5173/`.
 
 ## License
 This project is licensed under the MIT License.
