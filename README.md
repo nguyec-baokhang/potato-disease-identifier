@@ -18,7 +18,7 @@ The **Potato Disease Identifier** is a web application that uses a TensorFlow mo
 ### Backend (API)
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/potato-disease-api.git
+   git clone https://github.com/nguyec-baokhang/potato-disease-identifier.git
    cd potato-disease-api
    ```
 2. Install dependencies:
@@ -33,7 +33,7 @@ The **Potato Disease Identifier** is a web application that uses a TensorFlow mo
 ### Frontend
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/potato-disease-frontend.git
+   git clone https://github.com/nguyec-baokhang/potato-disease-identifier.git
    cd potato-disease-frontend
    ```
 2. Install dependencies:
@@ -42,7 +42,7 @@ The **Potato Disease Identifier** is a web application that uses a TensorFlow mo
    ```
 3. Start the development server:
    ```bash
-   npm start
+   npm start/npm run dev
    ```
 
 ## Docker Deployment
@@ -59,14 +59,14 @@ Docker images have been pushed to Docker Hub for easy deployment:
    ```
 3. Run the backend container:
    ```bash
-   docker run -d -p 8000:8000 khangnguyen123/potato-disease-identifier
+   docker run -d -p 80:80 khangnguyen123/potato-disease-identifier
    ```
 4. Run the frontend container:
    ```bash
-   docker run -d -p 3000:3000 khangnguyen123/potato-disease-identifier-frontend
+   docker run -d -p 5173:5173 khangnguyen123/potato-disease-identifier-frontend
    ```
 
-Your application should now be accessible via `http://<your-ec2-ip>:3000/`.
+Your application should now be accessible via `http://3.26.102.143:5173/`.
 
 ## License
 This project is licensed under the MIT License.
